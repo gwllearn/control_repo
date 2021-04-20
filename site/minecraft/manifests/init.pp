@@ -26,6 +26,6 @@ class minecraft (
   service { 'minecraft':
     ensure => running,
     enable => true,
-    require => [Package['java'],file["${install_dir}/eulta.txt"],file['/etc/systemd/system/minecraft.service']],
+    require => [Package['java'],file["${install_dir}/eula.txt"],file['/etc/systemd/system/minecraft.service']],
   }
 }
